@@ -62,7 +62,7 @@
             </PopoverGroup>
             <PopoverGroup as="nav" class="hidden md:flex space-x-10">
             <Popover class="relative" v-slot="{ open }">
-              <PopoverButton :class="[open ? 'text-gray-600' : 'text-gray-200', 'group bg-black rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white']">
+              <PopoverButton :class="[open ? 'text-gray-600' : 'text-gray-200', 'group bg-black rounded-md inline-flex items-center text-base font-medium hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white']">
                 <span>Industries Served</span>
                 <ChevronDownIcon :class="[open ? 'text-gray-600' : 'text-gray-400', 'ml-2 h-5 w-5 group-hover:text-gray-500']" aria-hidden="true" />
               </PopoverButton>
@@ -89,16 +89,16 @@
               </transition>
             </Popover>
             </PopoverGroup>
-            <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-900">
+            <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-400">
               About
             </a>
-            <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-900">
+            <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-400">
               Partners
             </a>
-            <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-900">
+            <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-400">
               News
             </a>
-            <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-900">
+            <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-400">
               Contact
             </a>
           
@@ -174,13 +174,13 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
             <div class="absolute inset-0">
-              <img class="h-full w-full object-cover" src="https://twg2022.com/wp-content/uploads/2018/10/33338388565_1f35ced4ec_k.jpg" alt="People working on laptops" />
-              <div class="absolute inset-0 bg-gradient-to-r from-gray-700 via-gray-900 to-gray-900 mix-blend-multiply" />
+              <img class="h-full w-full object-cover" src="https://twg2022.com/wp-content/uploads/2021/03/36154957406_53a37149c2_o-1170x780.jpg" alt="People working on laptops" />
+              <div class="absolute inset-0 bg-gradient-to-r from-purple-900 via-purple-900 to-purple-900 mix-blend-multiply" />
             </div>
             <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
               <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
                 <span class="block text-white">Welcome to the future of</span>
-                <span class="block text-white">LIVE.</span>
+                <span class="block text-white mt-3">LIVE.</span>
               </h1>
               <p class="mt-6 max-w-xl mx-auto text-center text-2xl bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-pink-600 font-bold">
                 A new transparent streaming platform.
@@ -238,19 +238,19 @@
             <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
               <div>
                 <div>
-                  <span class="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600">
+                  <span class="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-rose-500 to-pink-600">
                     <InboxIcon class="h-6 w-6 text-white" aria-hidden="true" />
                   </span>
                 </div>
                 <div class="mt-6">
-                  <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">
+                  <h2 class="text-3xl font-extrabold tracking-tight text-gray-200">
                     Stay on top of customer support
                   </h2>
                   <p class="mt-4 text-lg text-gray-500">
                     Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.
                   </p>
                   <div class="mt-6">
-                    <a href="#" class="inline-flex bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700">
+                    <a href="#" class="inline-flex bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700">
                       Get started
                     </a>
                   </div>
@@ -288,19 +288,19 @@
             <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
               <div>
                 <div>
-                  <span class="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600">
+                  <span class="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-rose-500 to-pink-600">
                     <SparklesIcon class="h-6 w-6 text-white" aria-hidden="true" />
                   </span>
                 </div>
                 <div class="mt-6">
-                  <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">
+                  <h2 class="text-3xl font-extrabold tracking-tight text-gray-200">
                     Better understand your customers
                   </h2>
                   <p class="mt-4 text-lg text-gray-500">
                     Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.
                   </p>
                   <div class="mt-6">
-                    <a href="#" class="inline-flex bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700">
+                    <a href="#" class="inline-flex bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700">
                       Get started
                     </a>
                   </div>
@@ -377,14 +377,14 @@
         <div class="max-w-4xl mx-auto py-16 px-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             <span class="block">Ready to get started?</span>
-            <span class="block bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">Get in touch or create an account.</span>
+            <span class="block bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600 bg-clip-text text-transparent">Get in touch or create an account.</span>
           </h2>
           <div class="mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-5">
-            <a href="#" class="flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700">
-              Learn more
+            <a href="#" class="flex items-center justify-center bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600 bg-origin-border px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700">
+              Contact Us
             </a>
-            <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-800 bg-indigo-50 hover:bg-indigo-100">
-              Get started
+            <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-base bg-indigo-50 hover:bg-indigo-100">
+              Beta Platform
             </a>
           </div>
         </div>
@@ -403,7 +403,7 @@
                 </h3>
                 <ul role="list" class="mt-4 space-y-4">
                   <li v-for="item in footerNavigation.solutions" :key="item.name">
-                    <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">
+                    <a :href="item.href" class="text-base text-gray-500 hover:text-rose-600">
                       {{ item.name }}
                     </a>
                   </li>
@@ -415,7 +415,7 @@
                 </h3>
                 <ul role="list" class="mt-4 space-y-4">
                   <li v-for="item in footerNavigation.support" :key="item.name">
-                    <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">
+                    <a :href="item.href" class="text-base text-gray-500 hover:text-rose-600">
                       {{ item.name }}
                     </a>
                   </li>
@@ -429,7 +429,7 @@
                 </h3>
                 <ul role="list" class="mt-4 space-y-4">
                   <li v-for="item in footerNavigation.company" :key="item.name">
-                    <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">
+                    <a :href="item.href" class="text-base text-gray-500 hover:text-rose-600">
                       {{ item.name }}
                     </a>
                   </li>
@@ -441,7 +441,7 @@
                 </h3>
                 <ul role="list" class="mt-4 space-y-4">
                   <li v-for="item in footerNavigation.legal" :key="item.name">
-                    <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">
+                    <a :href="item.href" class="text-base text-gray-500 hover:text-rose-600">
                       {{ item.name }}
                     </a>
                   </li>
@@ -460,7 +460,7 @@
               <label for="email-address" class="sr-only">Email address</label>
               <input type="email" name="email-address" id="email-address" autocomplete="email" required="" class="appearance-none min-w-0 w-full bg-black border border-gray-300 rounded-md shadow-sm py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400" placeholder="Enter your email" />
               <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                <button type="submit" class="w-full flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700">
+                <button type="submit" class="w-full flex items-center justify-center bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600 bg-origin-border px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700">
                   Subscribe
                 </button>
               </div>
