@@ -174,7 +174,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
             <div class="absolute inset-0">
-              <img class="h-full w-full object-cover" src="https://twg2022.com/wp-content/uploads/2021/03/36154957406_53a37149c2_o-1170x780.jpg" alt="People working on laptops" />
+              <img class="h-full w-full object-cover" src="https://twg2022.com/wp-content/uploads/2018/10/33338388565_1f35ced4ec_k.jpg" alt="People working on laptops" />
               <div class="absolute inset-0 bg-gradient-to-r from-purple-900 via-purple-900 to-purple-900 mix-blend-multiply" />
             </div>
             <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
@@ -200,13 +200,13 @@
       <!-- Logo Cloud -->
       <div class="bg-black">
         <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-        <p class="text-center text-2xl font-semibold uppercase bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-pink-600 tracking-wide mb-2">
+        <p class="text-center text-2xl font-semibold uppercase bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-pink-600 tracking-wide mb-4">
             We're in good company
           </p>
-          <p class="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
+          <p class="text-center text-sm font-semibold uppercase text-gray-400 tracking-wide">
             Our lovely strategic partners
           </p>
-          <div class="mt-9 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-4">
+          <div class="mt-11 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-4">
             <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1 oracle-logo">
               <a href="/partners/oracle">
               <img class="h-12" src="https://corp-staging.brime.tv/img/oracle-logo-color-400.svg" alt="Oracle Cloud" />
@@ -218,10 +218,14 @@
               </a>
             </div>
             <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1 deepgram-logo">
+              <a href="/partners/deepgram">
               <img class="h-12" src="https://corp-staging.brime.tv/img/deepgram-logo-color-400.svg" alt="StaticKit" />
+              </a>
             </div>
             <div class="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1 theworldgames-logo">
+              <a href="/partners/theworldgames">
               <img class="h-12" src="https://corp-staging.brime.tv/img/theworldgames-logo-color-400.svg" alt="Transistor" />
+              </a>
             </div>
             <!-- <div class="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
               <img class="h-12" src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg" alt="Workcation" />
@@ -244,14 +248,14 @@
                 </div>
                 <div class="mt-6">
                   <h2 class="text-3xl font-extrabold tracking-tight text-gray-200">
-                    Stay on top of customer support
+                    Your Stream, Everywhere
                   </h2>
-                  <p class="mt-4 text-lg text-gray-500">
-                    Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.
+                  <p class="mt-4 text-lg text-slate-300">
+                    With built-in support for multiple streaming platforms, you can stream your content simultaniously, anywhere... for free.
                   </p>
                   <div class="mt-6">
                     <a href="#" class="inline-flex bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700">
-                      Get started
+                      Learn More
                     </a>
                   </div>
                 </div>
@@ -278,7 +282,7 @@
             </div>
             <div class="mt-12 sm:mt-16 lg:mt-0">
               <div class="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-                <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg" alt="Inbox user interface" />
+                <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="https://id1o3gz7dylz.compat.objectstorage.us-ashburn-1.oraclecloud.com/brime/share/2021/12/chrome_TiF9xpZVLw.png" alt="Inbox user interface" />
               </div>
             </div>
           </div>
@@ -294,10 +298,10 @@
                 </div>
                 <div class="mt-6">
                   <h2 class="text-3xl font-extrabold tracking-tight text-gray-200">
-                    Better understand your customers
+                    Feature Rich Live Chat
                   </h2>
-                  <p class="mt-4 text-lg text-gray-500">
-                    Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.
+                  <p class="mt-4 text-lg text-slate-300">
+                    From auto-translation, to support for GIFs, our chat wipes the floor with every other platform. Speaking of those guys... we provide multi-chat support which allows you to see chat messages across multiple platforms.
                   </p>
                   <div class="mt-6">
                     <a href="#" class="inline-flex bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700">
@@ -309,7 +313,7 @@
             </div>
             <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
               <div class="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-                <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="https://tailwindui.com/img/component-images/inbox-app-screenshot-2.jpg" alt="Customer profile user interface" />
+                <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="https://id1o3gz7dylz.compat.objectstorage.us-ashburn-1.oraclecloud.com/brime/share/2021/12/chrome_bj6hgalOoy.jpg" alt="Customer profile user interface" />
               </div>
             </div>
           </div>
@@ -359,7 +363,7 @@
               <span class="bg-gradient-to-r from-purple-300 to-indigo-300 bg-clip-text text-transparent">Valuable Metrics</span>
             </h2>
             <p class="mt-3 text-3xl font-extrabold text-white">Get actionable data that will help grow your business</p>
-            <p class="mt-5 text-lg text-gray-300">Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in viverra tristique sem. Ornare feugiat viverra eleifend fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus laoreet amet lacus nibh integer quis. Eu vulputate diam sit tellus quis at.</p>
+            <p class="mt-5 text-lg text-slate-300">Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in viverra tristique sem. Ornare feugiat viverra eleifend fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus laoreet amet lacus nibh integer quis. Eu vulputate diam sit tellus quis at.</p>
             <div class="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
               <p v-for="item in metrics" :key="item.id">
                 <span class="block text-2xl font-bold text-white">{{ item.stat }}</span>
@@ -450,10 +454,10 @@
             </div>
           </div>
           <div class="mt-12 xl:mt-0">
-            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+            <h3 class="text-sm font-semibold text-slate-300 tracking-wider uppercase">
               Subscribe to our newsletter
             </h3>
-            <p class="mt-4 text-base text-gray-500">
+            <p class="mt-4 text-base text-gray-400">
               The latest news, articles, and resources, sent to your inbox weekly.
             </p>
             <form class="mt-4 sm:flex sm:max-w-md">
