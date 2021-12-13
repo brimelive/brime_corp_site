@@ -16,6 +16,20 @@
     content: url("/img/theworldgames-logo-color-400.svg");
   }
 
+  .oracle-logo img {
+    filter: saturate(0%)
+  }
+  
+  .cloudflare-logo img {
+    filter: saturate(0%)
+  }
+  .deepgram-logo img {
+    filter: saturate(0%)
+  }
+  .theworldgames-logo img {
+    filter: saturate(0%)
+    }  
+
 .bg-black {
   background-color: #111827 !important;
 }

@@ -209,19 +209,19 @@
           <div class="mt-9 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-4">
             <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1 oracle-logo">
               <a href="/partners/oracle">
-              <img class="h-12" src="https://id1o3gz7dylz.compat.objectstorage.us-ashburn-1.oraclecloud.com/brime/share/2021/12/oracle-logo-grey-400.svg" alt="Oracle Cloud" />
+              <img class="h-12" src="/img/oracle-logo-grey-400.svg" alt="Oracle Cloud" />
               </a>
             </div>
             <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1 cloudflare-logo">
               <a href="/partners/cloudflare">
-              <img class="h-12" src="https://id1o3gz7dylz.compat.objectstorage.us-ashburn-1.oraclecloud.com/brime/share/2021/12/cloudflare-logo-grey-400.svg" alt="Mirage" />
+              <img class="h-12" src="/img/cloudflare-logo-grey-400.svg" alt="Mirage" />
               </a>
             </div>
             <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1 deepgram-logo">
-              <img class="h-12" src="https://id1o3gz7dylz.compat.objectstorage.us-ashburn-1.oraclecloud.com/brime/share/2021/12/deepgram-logo-grey-400.svg" alt="StaticKit" />
+              <img class="h-12" src="/img/deepgram-logo-grey-400.svg" alt="StaticKit" />
             </div>
             <div class="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1 theworldgames-logo">
-              <img class="h-12" src="https://id1o3gz7dylz.compat.objectstorage.us-ashburn-1.oraclecloud.com/brime/share/2021/12/theworldgames-logo-grey-400.svg" alt="Transistor" />
+              <img class="h-12" src="/img/theworldgames-logo-grey-400.svg" alt="Transistor" />
             </div>
             <!-- <div class="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
               <img class="h-12" src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg" alt="Workcation" />
