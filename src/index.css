@@ -3,17 +3,16 @@
 @tailwind utilities;
 
 .oracle-logo img:hover {
-  filter: saturate(0%)
+  filter: saturate(100%)
 }
-
 .cloudflare-logo img:hover {
-  filter: saturate(0%)
+  filter: saturate(100%)
 }
 .deepgram-logo img:hover {
-  filter: saturate(0%)
+  filter: saturate(100%)
 }
 .theworldgames-logo img:hover {
-  filter: saturate(0%)
+  filter: saturate(100%)
   }
 
   .oracle-logo img {
