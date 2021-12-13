@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 .oracle-logo img:hover {
-  content: url("/img/oracle-logo-color-400.svg");
+  filter: saturate(0%)
 }
 
 .cloudflare-logo img:hover {
-  content: url("/img/cloudflare-logo-color-400.svg");
+  filter: saturate(0%)
 }
 .deepgram-logo img:hover {
-  content: url("/img/deepgram-logo-color-400.svg");
+  filter: saturate(0%)
 }
 .theworldgames-logo img:hover {
-    content: url("/img/theworldgames-logo-color-400.svg");
+  filter: saturate(0%)
   }
 
   .oracle-logo img {
