@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.oracle-logo img:hover {
+  content: url("https://id1o3gz7dylz.compat.objectstorage.us-ashburn-1.oraclecloud.com/brime/share/2021/12/oracle-logo-color-400.svg");
+}
+
+.cloudflare-logo img:hover {
+  content: url("https://id1o3gz7dylz.compat.objectstorage.us-ashburn-1.oraclecloud.com/brime/share/2021/12/cloudflare-logo-color-400.svg");
+}
+.deepgram-logo img:hover {
+  content: url("https://id1o3gz7dylz.compat.objectstorage.us-ashburn-1.oraclecloud.com/brime/share/2021/12/deepgram-logo-color-400.svg");
+}
+.theworldgames-logo img:hover {
+    content: url("https://id1o3gz7dylz.compat.objectstorage.us-ashburn-1.oraclecloud.com/brime/share/2021/12/theworldgames-logo-color-400.svg");
+  }
