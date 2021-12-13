@@ -90,7 +90,7 @@
             </Popover>
             </PopoverGroup>
             <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-400">
-              About
+              Company
             </a>
             <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-400">
               Partners
@@ -324,10 +324,10 @@
       <div class="bg-gradient-to-r from-purple-800 to-indigo-700">
         <div class="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
           <h2 class="text-3xl font-extrabold text-white tracking-tight">
-            Inbox support built for efficiency
+            Even More Features
           </h2>
           <p class="mt-4 max-w-3xl text-lg text-purple-200">
-            Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis. Blandit aliquam sit nisl euismod mattis in.
+            Below are a few more features that make Brime even more awesome.
           </p>
           <div class="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
             <div v-for="feature in features" :key="feature.name">
@@ -336,7 +336,7 @@
                   <component :is="feature.icon" class="h-6 w-6 text-white" aria-hidden="true" />
                 </span>
               </div>
-              <div class="mt-6">
+              <div class="mt-3">
                 <h3 class="text-lg font-medium text-white">{{ feature.name }}</h3>
                 <p class="mt-2 text-base text-purple-200">
                   {{ feature.description }}
@@ -362,8 +362,8 @@
             <h2 class="text-sm font-semibold tracking-wide uppercase">
               <span class="bg-gradient-to-r from-purple-300 to-indigo-300 bg-clip-text text-transparent">Valuable Metrics</span>
             </h2>
-            <p class="mt-3 text-3xl font-extrabold text-white">Get actionable data that will help grow your business</p>
-            <p class="mt-5 text-lg text-slate-300">Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in viverra tristique sem. Ornare feugiat viverra eleifend fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus laoreet amet lacus nibh integer quis. Eu vulputate diam sit tellus quis at.</p>
+            <p class="mt-3 text-3xl font-extrabold text-white">Our Journey</p>
+            <p class="mt-5 text-lg text-slate-300">We started on this road 1 year ago. Over the past 12 months, we've conducted thousands of hours of R&D and gathered tons of alpha user feedback. Over the next few months you'll begin to see a lot more of us.</p>
             <div class="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
               <p v-for="item in metrics" :key="item.id">
                 <span class="block text-2xl font-bold text-white">{{ item.stat }}</span>
@@ -491,6 +491,13 @@
 import { defineComponent, h } from 'vue'
 import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue'
 import {
+  BeakerIcon,
+  BanIcon,
+  CurrencyDollarIcon,
+  CodeIcon,
+  TranslateIcon,
+  ScissorsIcon,
+  RewindIcon,
   AnnotationIcon,
   ChatAlt2Icon,
   ChatAltIcon,
@@ -561,51 +568,51 @@ const verticles = [
 ]
 const features = [
   {
-    name: 'Unlimited Inboxes',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: InboxIcon,
+    name: 'Live Rewind',
+    description: 'Description',
+    icon: RewindIcon,
   },
   {
-    name: 'Manage Team Members',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: UsersIcon,
+    name: 'Instant Clipping',
+    description: 'Description',
+    icon: ScissorsIcon,
   },
   {
-    name: 'Spam Report',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: TrashIcon,
+    name: 'Live Chat Translation',
+    description: 'Description',
+    icon: TranslateIcon,
   },
   {
-    name: 'Compose in Markdown',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: PencilAltIcon,
+    name: 'Open API',
+    description: 'Description',
+    icon: CodeIcon,
   },
   {
-    name: 'Team Reporting',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: DocumentReportIcon,
+    name: '70% Subcription Rev Share',
+    description: 'Description',
+    icon: CurrencyDollarIcon,
   },
   {
-    name: 'Saved Replies',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    name: 'Live Chat Replies',
+    description: 'Description',
     icon: ReplyIcon,
   },
   {
-    name: 'Email Commenting',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ChatAltIcon,
+    name: 'Advanced Bot Detection',
+    description: 'Description',
+    icon: BanIcon,
   },
   {
-    name: 'Connect with Customers',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: HeartIcon,
+    name: 'Brime Labs',
+    description: 'Description',
+    icon: BeakerIcon,
   },
 ]
 const metrics = [
-  { id: 1, stat: '8K+', emphasis: 'Companies', rest: 'use laoreet amet lacus nibh integer quis.' },
-  { id: 2, stat: '25K+', emphasis: 'Countries around the globe', rest: 'lacus nibh integer quis.' },
-  { id: 3, stat: '98%', emphasis: 'Customer satisfaction', rest: 'laoreet amet lacus nibh integer quis.' },
-  { id: 4, stat: '12M+', emphasis: 'Issues resolved', rest: 'lacus nibh integer quis.' },
+  { id: 1, stat: '60,000', emphasis: 'Twitter Followers', rest: '' },
+  { id: 2, stat: '10,000', emphasis: 'Discord Members', rest: '' },
+  { id: 3, stat: '80', emphasis: 'Countries Accessed', rest: '' },
+  { id: 4, stat: '19,000', emphasis: 'Registered Users', rest: '' },
 ]
 const footerNavigation = {
   solutions: [
@@ -621,7 +628,7 @@ const footerNavigation = {
     { name: 'API Status', href: '#' },
   ],
   company: [
-    { name: 'About', href: '#' },
+    { name: 'Company', href: '#' },
     { name: 'Blog', href: '#' },
     { name: 'Jobs', href: '#' },
     { name: 'Press', href: '#' },
