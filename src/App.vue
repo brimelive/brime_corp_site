@@ -15,9 +15,9 @@
   ```
 -->
 <template>
-  <div class="bg-white">
+  <div class="bg-black">
     <header>
-      <Popover class="relative bg-white">
+      <Popover class="relative bg-neautral-900">
         <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
@@ -26,28 +26,27 @@
             </a>
           </div>
           <div class="-mr-2 -my-2 md:hidden">
-            <PopoverButton class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <PopoverButton class="bg-black rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
               <span class="sr-only">Open menu</span>
               <MenuIcon class="h-6 w-6" aria-hidden="true" />
             </PopoverButton>
           </div>
           <PopoverGroup as="nav" class="hidden md:flex space-x-10">
             <Popover class="relative" v-slot="{ open }">
-              <PopoverButton :class="[open ? 'text-gray-900' : 'text-gray-500', 'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white']">
+              <PopoverButton :class="[open ? 'text-gray-600' : 'text-gray-200', 'group bg-black rounded-md inline-flex items-center text-base font-medium hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white']">
                 <span>Features</span>
                 <ChevronDownIcon :class="[open ? 'text-gray-600' : 'text-gray-400', 'ml-2 h-5 w-5 group-hover:text-gray-500']" aria-hidden="true" />
               </PopoverButton>
-
               <transition enter-active-class="transition ease-out duration-200" enter-from-class="opacity-0 translate-y-1" enter-to-class="opacity-100 translate-y-0" leave-active-class="transition ease-in duration-150" leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 translate-y-1">
                 <PopoverPanel class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                   <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                    <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
-                      <a v-for="item in solutions" :key="item.name" :href="item.href" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                    <div class="relative grid gap-6 px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2 bg-gray-900">
+                      <a v-for="item in solutions" :key="item.name" :href="item.href" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 text-white hover:text-black">
                         <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-tr from-rose-500 via-pink-500 to-fuchsia-500 text-white sm:h-12 sm:w-12">
                           <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
                         </div>
                         <div class="ml-4">
-                          <p class="text-base font-medium text-gray-900">
+                          <p class="text-base font-medium">
                             {{ item.name }}
                           </p>
                           <p class="mt-1 text-sm text-gray-500">
@@ -60,20 +59,49 @@
                 </PopoverPanel>
               </transition>
             </Popover>
-
-            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+            </PopoverGroup>
+            <PopoverGroup as="nav" class="hidden md:flex space-x-10">
+            <Popover class="relative" v-slot="{ open }">
+              <PopoverButton :class="[open ? 'text-gray-600' : 'text-gray-200', 'group bg-black rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white']">
+                <span>Industries Served</span>
+                <ChevronDownIcon :class="[open ? 'text-gray-600' : 'text-gray-400', 'ml-2 h-5 w-5 group-hover:text-gray-500']" aria-hidden="true" />
+              </PopoverButton>
+              <transition enter-active-class="transition ease-out duration-200" enter-from-class="opacity-0 translate-y-1" enter-to-class="opacity-100 translate-y-0" leave-active-class="transition ease-in duration-150" leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 translate-y-1">
+                <PopoverPanel class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                  <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                    <div class="relative grid gap-6 bg-black px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
+                      <a v-for="item in solutions" :key="item.name" :href="item.href" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 text-white hover:text-black">
+                        <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-tr from-rose-500 via-pink-500 to-fuchsia-500 text-white sm:h-12 sm:w-12">
+                          <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+                        </div>
+                        <div class="ml-4">
+                          <p class="text-base font-medium">
+                            {{ item.name }}
+                          </p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            {{ item.description }}
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </PopoverPanel>
+              </transition>
+            </Popover>
+            </PopoverGroup>
+            <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-900">
               About
             </a>
-            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+            <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-900">
               Partners
             </a>
-            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+            <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-900">
               News
             </a>
-            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+            <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-900">
               Contact
             </a>
-          </PopoverGroup>
+          
           <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a href="#" class="ml-8 whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700">
               Beta Access
@@ -83,14 +111,14 @@
 
         <transition enter-active-class="duration-200 ease-out" enter-from-class="opacity-0 scale-95" enter-to-class="opacity-100 scale-100" leave-active-class="duration-100 ease-in" leave-from-class="opacity-100 scale-100" leave-to-class="opacity-0 scale-95">
           <PopoverPanel focus class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-black divide-y-2 divide-gray-50">
               <div class="pt-5 pb-6 px-5">
                 <div class="flex items-center justify-between">
                   <div>
                     <img class="h-8 w-auto" src="https://id1o3gz7dylz.compat.objectstorage.us-ashburn-1.oraclecloud.com/brime/brime_logo.svg" alt="Workflow" />
                   </div>
                   <div class="-mr-2">
-                    <PopoverButton class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <PopoverButton class="bg-black rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                       <span class="sr-only">Close menu</span>
                       <XIcon class="h-6 w-6" aria-hidden="true" />
                     </PopoverButton>
@@ -142,7 +170,7 @@
     <main>
       <!-- Hero section -->
       <div class="relative">
-        <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
+        <div class="absolute inset-x-0 bottom-0 h-1/2 bg-black" />
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
             <div class="absolute inset-0">
@@ -170,7 +198,7 @@
       </div>
 
       <!-- Logo Cloud -->
-      <div class="bg-gray-100">
+      <div class="bg-black">
         <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <p class="text-center text-2xl font-semibold uppercase bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-pink-600 tracking-wide mb-2">
             We're in good company
@@ -204,7 +232,7 @@
 
       <!-- Alternating Feature Sections -->
       <div class="relative pt-16 pb-32 overflow-hidden">
-        <div aria-hidden="true" class="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100" />
+        <div aria-hidden="true" class="absolute inset-x-0 top-0 h-48 bg-black" />
         <div class="relative">
           <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
             <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
@@ -300,7 +328,7 @@
           <div class="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
             <div v-for="feature in features" :key="feature.name">
               <div>
-                <span class="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
+                <span class="flex items-center justify-center h-12 w-12 rounded-md bg-black bg-opacity-10">
                   <component :is="feature.icon" class="h-6 w-6 text-white" aria-hidden="true" />
                 </span>
               </div>
@@ -316,7 +344,7 @@
       </div>
 
       <!-- Stats section -->
-      <div class="relative bg-gray-900">
+      <div class="relative bg-black">
         <div class="h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full">
           <div class="h-full w-full xl:grid xl:grid-cols-2">
             <div class="h-full xl:relative xl:col-start-2">
@@ -345,7 +373,7 @@
       </div>
 
       <!-- CTA Section -->
-      <div class="bg-white">
+      <div class="bg-black">
         <div class="max-w-4xl mx-auto py-16 px-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             <span class="block">Ready to get started?</span>
@@ -363,7 +391,7 @@
       </div>
     </main>
 
-    <footer class="bg-gray-50" aria-labelledby="footer-heading">
+    <footer class="bg-black" aria-labelledby="footer-heading">
       <h2 id="footer-heading" class="sr-only">Footer</h2>
       <div class="max-w-7xl mx-auto pt-16 pb-8 px-4 sm:px-6 lg:pt-24 lg:px-8">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
@@ -430,7 +458,7 @@
             </p>
             <form class="mt-4 sm:flex sm:max-w-md">
               <label for="email-address" class="sr-only">Email address</label>
-              <input type="email" name="email-address" id="email-address" autocomplete="email" required="" class="appearance-none min-w-0 w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400" placeholder="Enter your email" />
+              <input type="email" name="email-address" id="email-address" autocomplete="email" required="" class="appearance-none min-w-0 w-full bg-black border border-gray-300 rounded-md shadow-sm py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400" placeholder="Enter your email" />
               <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                 <button type="submit" class="w-full flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700">
                   Subscribe
@@ -482,13 +510,37 @@ import { ChevronDownIcon } from '@heroicons/vue/solid'
 const solutions = [
   {
     name: 'Video Delivery',
-    description: 'Our low latency, high framrate, crystal clear video delivery technology',
+    description: 'Low latency, high framrate, crystal clear video delivery technology',
     href: '#',
     icon: FilmIcon,
   },
   {
     name: 'Global Network',
-    description: "We've partnered with Oracle and Cloudflare to create an ultra fast global network",
+    description: "Our global footfrint encompasses 30 core data centers and over 250 Edge Delivery Data Centers",
+    href: '#',
+    icon: GlobeIcon,
+  },
+  { name: 'Live Chat', 
+    description: "Realtime chat that allows your viewers enjoy content together", 
+    href: '#', 
+    icon: ChatAltIcon },
+  {
+    name: 'Content ID / Music Licensing',
+    description: "Realtime music identification and licensing built-in by default",
+    href: '#',
+    icon: MusicNoteIcon,
+  },
+]
+const verticles = [
+  {
+    name: 'BRIME.TV',
+    description: 'Designed to overtake Twitch, YouTube Gaming, Facebook',
+    href: '#',
+    icon: FilmIcon,
+  },
+  {
+    name: 'Host Broadcasters',
+    description: "We work with production teams and broadcasters to deliver low latency, video content",
     href: '#',
     icon: GlobeIcon,
   },
@@ -498,7 +550,7 @@ const solutions = [
     icon: ChatAltIcon },
   {
     name: 'Music Licensing',
-    description: "We've partnered with the music industry to remove the hassle of licensing music for live content",
+    description: "Music licensing built-in by default",
     href: '#',
     icon: MusicNoteIcon,
   },
@@ -668,6 +720,7 @@ export default {
   setup() {
     return {
       solutions,
+      verticles,
       features,
       metrics,
       footerNavigation,

@@ -15,3 +15,10 @@
 .theworldgames-logo img:hover {
     content: url("https://id1o3gz7dylz.compat.objectstorage.us-ashburn-1.oraclecloud.com/brime/share/2021/12/theworldgames-logo-color-400.svg");
   }
+
+.bg-black {
+  background-color: #111827 !important;
+}
+.text-black-dark {
+  color: #121212 !important;
+}
