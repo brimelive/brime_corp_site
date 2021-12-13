@@ -103,7 +103,7 @@
             </a>
           
           <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a href="#" class="ml-8 whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700">
+            <a href="https://brime.tv" target="_blank" class="ml-8 whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700">
               Beta Access
             </a>
           </div>
@@ -264,7 +264,7 @@
                 <blockquote>
                   <div>
                     <p class="text-base text-gray-500">
-                      &ldquo;Cras velit quis eros eget rhoncus lacus ultrices sed diam. Sit orci risus aenean curabitur donec aliquet. Mi venenatis in euismod ut.&rdquo;
+                      &ldquo;User Testimonial Goes Here.&rdquo;
                     </p>
                   </div>
                   <footer class="mt-3">
@@ -273,7 +273,7 @@
                         <img class="h-6 w-6 rounded-full" src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="" />
                       </div>
                       <div class="text-base font-medium text-gray-700">
-                        Marcia Hill, Digital Marketing Manager
+                        Jane Doe, @JDoe
                       </div>
                     </div>
                   </footer>
@@ -387,7 +387,7 @@
             <a href="#" class="flex items-center justify-center bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600 bg-origin-border px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700">
               Contact Us
             </a>
-            <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-base bg-indigo-50 hover:bg-indigo-100">
+            <a href="https://brime.tv" target="_blank" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-base bg-indigo-50 hover:bg-indigo-100">
               Beta Platform
             </a>
           </div>
