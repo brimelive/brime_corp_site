@@ -532,7 +532,7 @@ const solutions = [
     icon: GlobeIcon,
   },
   { name: 'Live Chat', 
-    description: "Realtime chat that allows your viewers enjoy content together", 
+    description: "Realtime chat that allows your viewers to enjoy content together", 
     href: '#', 
     icon: ChatAltIcon },
   {
