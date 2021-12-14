@@ -20,8 +20,8 @@
       <Popover class="relative bg-neautral-900">
         <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
           <div class="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
-              <span class="sr-only">Workflow</span>
+            <a href="/">
+              <span class="sr-only">BRIME</span>
               <img class="h-8 w-auto sm:h-10" src="https://id1o3gz7dylz.compat.objectstorage.us-ashburn-1.oraclecloud.com/brime/share/2021/12/brime_logo_tailwind.svg" alt="" />
             </a>
           </div>
@@ -33,13 +33,13 @@
           </div>
           <PopoverGroup as="nav" class="hidden md:flex space-x-10">
             <Popover class="relative" v-slot="{ open }">
-              <PopoverButton :class="[open ? 'text-gray-600' : 'text-gray-200', 'group bg-black rounded-md inline-flex items-center text-base font-medium hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white']">
+              <PopoverButton :class="[open ? 'text-gray-600' : 'text-gray-200', 'group bg-black rounded-md inline-flex items-center text-base font-medium hover:text-gray-400 focus:outline-none']">
                 <span>Platform</span>
                 <ChevronDownIcon :class="[open ? 'text-gray-600' : 'text-gray-400', 'ml-2 h-5 w-5 group-hover:text-gray-500']" aria-hidden="true" />
               </PopoverButton>
               <transition enter-active-class="transition ease-out duration-200" enter-from-class="opacity-0 translate-y-1" enter-to-class="opacity-100 translate-y-0" leave-active-class="transition ease-in duration-150" leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 translate-y-1">
                 <PopoverPanel class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                  <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                  <div class="rounded-lg shadow-2xl ring-1 ring-black ring-opacity-5 overflow-hidden">
                     <div class="relative grid gap-6 px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2 bg-gray-900">
                       <a v-for="item in solutions" :key="item.name" :href="item.href" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 text-white hover:text-black">
                         <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-tr from-rose-500 via-pink-500 to-fuchsia-500 text-white sm:h-12 sm:w-12">
@@ -88,8 +88,58 @@
                 </PopoverPanel>
               </transition>
             </Popover>
-            </PopoverGroup>
+            
             <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-400">
+              Company
+            </a>
+            <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-400">
+              Partners
+            </a>
+            <a href="https://news.brime.tv" class="text-base font-medium text-gray-200 hover:text-gray-400">
+              News
+            </a>
+            <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-400">
+              Contact
+            </a>
+          </PopoverGroup>
+          <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+            <a href="https://brime.tv" target="_blank" class="ml-8 whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700">
+              Beta Access
+            </a>
+          </div>
+        </div>
+
+        <transition enter-active-class="duration-200 ease-out" enter-from-class="opacity-0 scale-95" enter-to-class="opacity-100 scale-100" leave-active-class="duration-100 ease-in" leave-from-class="opacity-100 scale-100" leave-to-class="opacity-0 scale-95">
+          <PopoverPanel focus class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+            <div class="rounded-lg shadow-2xl ring-1 ring-white ring-opacity-9 bg-gray-900 divide-y-2 divide-gray-50">
+              <div class="pt-5 pb-6 px-5">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <img class="h-8 w-auto" src="https://id1o3gz7dylz.compat.objectstorage.us-ashburn-1.oraclecloud.com/brime/share/2021/12/brime_logo_tailwind.svg" alt="Workflow" />
+                  </div>
+                  <div class="-mr-2">
+                    <PopoverButton class="bg-gray-800 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <span class="sr-only">Close menu</span>
+                      <XIcon class="h-6 w-6" aria-hidden="true" />
+                    </PopoverButton>
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <nav class="grid grid-cols-1 gap-7">
+                    <a v-for="item in solutions" :key="item.name" :href="item.href" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                      <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-tr from-rose-500 via-pink-500 to-fuchsia-500 text-white">
+                        <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+                      </div>
+                      <div class="ml-4 text-base font-medium text-gray-200">
+                        {{ item.name }}
+                      </div>
+                    </a>
+                  </nav>
+                </div>
+              </div>
+              <div class="py-6 px-5">
+                <div class="grid grid-cols-2 gap-4">
+                  <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-400">
               Company
             </a>
             <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-400">
@@ -101,64 +151,24 @@
             <a href="#" class="text-base font-medium text-gray-200 hover:text-gray-400">
               Contact
             </a>
-          
-          <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a href="https://brime.tv" target="_blank" class="ml-8 whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700">
-              Beta Access
-            </a>
-          </div>
-        </div>
-
-        <transition enter-active-class="duration-200 ease-out" enter-from-class="opacity-0 scale-95" enter-to-class="opacity-100 scale-100" leave-active-class="duration-100 ease-in" leave-from-class="opacity-100 scale-100" leave-to-class="opacity-0 scale-95">
-          <PopoverPanel focus class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-black divide-y-2 divide-gray-50">
-              <div class="pt-5 pb-6 px-5">
-                <div class="flex items-center justify-between">
-                  <div>
-                    <img class="h-8 w-auto" src="https://id1o3gz7dylz.compat.objectstorage.us-ashburn-1.oraclecloud.com/brime/brime_logo.svg" alt="Workflow" />
-                  </div>
-                  <div class="-mr-2">
-                    <PopoverButton class="bg-black rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                      <span class="sr-only">Close menu</span>
-                      <XIcon class="h-6 w-6" aria-hidden="true" />
-                    </PopoverButton>
-                  </div>
-                </div>
-                <div class="mt-6">
-                  <nav class="grid grid-cols-1 gap-7">
-                    <a v-for="item in solutions" :key="item.name" :href="item.href" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
-                      <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
-                        <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-                      </div>
-                      <div class="ml-4 text-base font-medium text-gray-900">
-                        {{ item.name }}
-                      </div>
-                    </a>
-                  </nav>
-                </div>
-              </div>
-              <div class="py-6 px-5">
-                <div class="grid grid-cols-2 gap-4">
-                  <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
-                    Pricing
-                  </a>
-                  <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
-                    Partners
-                  </a>
-                  <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
-                    Company
-                  </a>
                 </div>
                 <div class="mt-6">
                   <a href="#" class="w-full flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700">
                     Beta Access
                   </a>
-                  <!-- <p class="mt-6 text-center text-base font-medium text-gray-500">
-                    Existing customer?
-                    <a href="#" class="text-gray-900">
-                      Sign in
+                  
+                  <p class="mt-6 text-center text-base font-medium text-gray-400">
+                    Looking for distribution?
+                    <a href="#" class="text-rose-500">
+                      Contact Us
                     </a>
-                  </p> -->
+                  </p>
+                  <div class="flex space-x-9 md:order-2 mt-5">
+            <a v-for="item in footerNavigation.social" :key="item.name" :href="item.href" target="_blank" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">{{ item.name }}</span>
+              <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+            </a>
+          </div>
                 </div>
               </div>
             </div>
@@ -183,11 +193,11 @@
                 <span class="block text-white mt-3">LIVE.</span>
               </h1>
               <p class="mt-6 max-w-xl mx-auto text-center text-2xl bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-pink-600 font-bold">
-                A new transparent streaming platform.
+                A new streaming platform focused on innovation
               </p>
               <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                 <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-1">
-                  <a href="https://brime.tv" target="_blank" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-white hover:bg-indigo-50 sm:px-8">
+                  <a href="https://brime.tv" target="_blank" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-white hover:bg-gray-300 sm:px-8">
                     Check out the Beta
                   </a>
                 </div>
@@ -243,7 +253,7 @@
               <div>
                 <div>
                   <span class="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-rose-500 to-pink-600">
-                    <InboxIcon class="h-6 w-6 text-white" aria-hidden="true" />
+                    <ArrowsExpandIcon class="h-6 w-6 text-white" aria-hidden="true" />
                   </span>
                 </div>
                 <div class="mt-6">
@@ -406,8 +416,8 @@
                   Solutions
                 </h3>
                 <ul role="list" class="mt-4 space-y-4">
-                  <li v-for="item in footerNavigation.solutions" :key="item.name">
-                    <a :href="item.href" class="text-base text-gray-500 hover:text-rose-600">
+                  <li v-for="item in footerNavigation.solutions" :key="item.name" >
+                    <a :href="item.href" class="text-base text-gray-500 hover:text-rose-600 hover:font-semibold">
                       {{ item.name }}
                     </a>
                   </li>
@@ -419,7 +429,7 @@
                 </h3>
                 <ul role="list" class="mt-4 space-y-4">
                   <li v-for="item in footerNavigation.support" :key="item.name">
-                    <a :href="item.href" class="text-base text-gray-500 hover:text-rose-600">
+                    <a :href="item.href" class="text-base text-gray-500 hover:text-rose-600 hover:font-semibold">
                       {{ item.name }}
                     </a>
                   </li>
@@ -433,7 +443,7 @@
                 </h3>
                 <ul role="list" class="mt-4 space-y-4">
                   <li v-for="item in footerNavigation.company" :key="item.name">
-                    <a :href="item.href" class="text-base text-gray-500 hover:text-rose-600">
+                    <a :href="item.href" class="text-base text-gray-500 hover:text-rose-600 hover:font-semibold">
                       {{ item.name }}
                     </a>
                   </li>
@@ -445,7 +455,7 @@
                 </h3>
                 <ul role="list" class="mt-4 space-y-4">
                   <li v-for="item in footerNavigation.legal" :key="item.name">
-                    <a :href="item.href" class="text-base text-gray-500 hover:text-rose-600">
+                    <a :href="item.href" class="text-base text-gray-500 hover:text-rose-600 hover:font-semibold">
                       {{ item.name }}
                     </a>
                   </li>
@@ -491,6 +501,7 @@
 import { defineComponent, h } from 'vue'
 import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue'
 import {
+  ArrowsExpandIcon,
   BeakerIcon,
   BanIcon,
   CurrencyDollarIcon,
@@ -544,7 +555,7 @@ const solutions = [
 ]
 const verticles = [
   {
-    name: 'BRIME.TV',
+    name: 'Brime.tv',
     description: 'Designed to overtake Twitch, YouTube Gaming, Facebook',
     href: '#',
     icon: FilmIcon,
@@ -555,7 +566,7 @@ const verticles = [
     href: '#',
     icon: GlobeIcon,
   },
-  { name: 'Original Content Owners', 
+  { name: 'Original Content', 
     description: "Have a catelog of content that you want to share with the world?", 
     href: '#', 
     icon: ChatAltIcon },
@@ -618,7 +629,7 @@ const footerNavigation = {
   solutions: [
     { name: 'Brime.tv', href: '#' },
     { name: 'Host Broadcasters', href: '#' },
-    { name: 'Original Content Holders', href: '#' },
+    { name: 'Original Content', href: '#' },
     { name: 'Linear TV / OTT', href: '#' },
   ],
   support: [
@@ -738,6 +749,7 @@ export default {
     PopoverGroup,
     PopoverPanel,
     ChevronDownIcon,
+    ArrowsExpandIcon,
     InboxIcon,
     MenuIcon,
     SparklesIcon,
