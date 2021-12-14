@@ -63,14 +63,14 @@
             <PopoverGroup as="nav" class="hidden md:flex space-x-10">
             <Popover class="relative" v-slot="{ open }">
               <PopoverButton :class="[open ? 'text-gray-600' : 'text-gray-200', 'group bg-black rounded-md inline-flex items-center text-base font-medium hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white']">
-                <span>Industries Served</span>
+                <span>Verticles</span>
                 <ChevronDownIcon :class="[open ? 'text-gray-600' : 'text-gray-400', 'ml-2 h-5 w-5 group-hover:text-gray-500']" aria-hidden="true" />
               </PopoverButton>
               <transition enter-active-class="transition ease-out duration-200" enter-from-class="opacity-0 translate-y-1" enter-to-class="opacity-100 translate-y-0" leave-active-class="transition ease-in duration-150" leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 translate-y-1">
                 <PopoverPanel class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                   <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                     <div class="relative grid gap-6 bg-black px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
-                      <a v-for="item in solutions" :key="item.name" :href="item.href" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 text-white hover:text-black">
+                      <a v-for="item in verticles" :key="item.name" :href="item.href" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 text-white hover:text-black">
                         <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-tr from-rose-500 via-pink-500 to-fuchsia-500 text-white sm:h-12 sm:w-12">
                           <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
                         </div>
@@ -527,7 +527,7 @@ const solutions = [
   },
   {
     name: 'Global Network',
-    description: "Our global footfrint encompasses 30 core data centers and over 250 Edge Delivery Data Centers",
+    description: "30 core data centers and over  ⠀⠀⠀ 250 Edge Delivery Data Centers",
     href: '#',
     icon: GlobeIcon,
   },
@@ -551,17 +551,17 @@ const verticles = [
   },
   {
     name: 'Host Broadcasters',
-    description: "We work with production teams and broadcasters to deliver low latency, video content",
+    description: "You've produced awesome content, let us deliver it to the world",
     href: '#',
     icon: GlobeIcon,
   },
-  { name: 'Live Chat', 
+  { name: 'Original Content Owners', 
     description: "Realtime chat technology that let's your viewers enjoy content together", 
     href: '#', 
     icon: ChatAltIcon },
   {
-    name: 'Music Licensing',
-    description: "Music licensing built-in by default",
+    name: 'Linear TV / OTT',
+    description: "Ready to bring your content into the digital age?",
     href: '#',
     icon: MusicNoteIcon,
   },
