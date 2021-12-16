@@ -261,7 +261,7 @@
                     Your Stream, Everywhere
                   </h2>
                   <p class="mt-4 text-lg text-slate-300">
-                    With built-in support for multiple streaming platforms, you can stream your content simultaniously, anywhere... for free.
+                    With built-in support for multiple streaming platforms, you can stream your content simultaneously, anywhere... for free.
                   </p>
                   <div class="mt-6">
                     <a href="#" class="inline-flex bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700">
@@ -311,7 +311,7 @@
                     Feature Rich Live Chat
                   </h2>
                   <p class="mt-4 text-lg text-slate-300">
-                    From auto-translation, to support for GIFs, our chat wipes the floor with every other platform. Speaking of those guys... we provide multi-chat support which allows you to see chat messages across multiple platforms.
+                    From auto-translation to support for GIFs, our chat wipes the floor with every other platform. Speaking of those guys... we provide multi-chat support, which allows you to see chat messages across multiple platforms.
                   </p>
                   <div class="mt-6">
                     <a href="#" class="inline-flex bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700">
@@ -373,7 +373,7 @@
               <span class="bg-gradient-to-r from-purple-300 to-indigo-300 bg-clip-text text-transparent">Valuable Metrics</span>
             </h2>
             <p class="mt-3 text-3xl font-extrabold text-white">Our Journey</p>
-            <p class="mt-5 text-lg text-slate-300">We started on this road 1 year ago. Over the past 12 months, we've conducted thousands of hours of R&D and gathered tons of alpha user feedback. Over the next few months you'll begin to see a lot more of us.</p>
+            <p class="mt-5 text-lg text-slate-300">We started on this road 1 year ago. Over the past 12 months, we've conducted thousands of hours of R&D and gathered tons of alpha user feedback. Over the next few months, you'll begin to see a lot more of us.</p>
             <div class="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
               <p v-for="item in metrics" :key="item.id">
                 <span class="block text-2xl font-bold text-white">{{ item.stat }}</span>
@@ -580,37 +580,37 @@ const verticles = [
 const features = [
   {
     name: 'Live Rewind',
-    description: 'Description',
+    description: 'Go back in time with ease for any moments you missed',
     icon: RewindIcon,
   },
   {
     name: 'Instant Clipping',
-    description: 'Description',
+    description: 'Capture shareable content with the world at record speeds',
     icon: ScissorsIcon,
   },
   {
     name: 'Live Chat Translation',
-    description: 'Description',
+    description: 'Support for 20+ languages, bridging many different communities & cultures',
     icon: TranslateIcon,
   },
   {
     name: 'Open API',
-    description: 'Description',
+    description: 'Developer-friendly API',
     icon: CodeIcon,
   },
   {
     name: '70% Subcription Rev Share',
-    description: 'Description',
+    description: 'Competitive creator first splits',
     icon: CurrencyDollarIcon,
   },
   {
     name: 'Live Chat Replies',
-    description: 'Description',
+    description: 'Effortlessly reply to other chatters',
     icon: ReplyIcon,
   },
   {
     name: 'Advanced Bot Detection',
-    description: 'Description',
+    description: 'Zero nonsense policy, our goal is to protect creators & the platform as a whole',
     icon: BanIcon,
   },
   {
@@ -652,15 +652,15 @@ const footerNavigation = {
   ],
   social: [
     {
-      name: 'LinkedIn',
-      href: 'https://www.linkedin.com/company/brime/',
+      name: 'Discord',
+      href: 'https://discord.com/invite/brime',
       icon: defineComponent({
         render: () =>
           h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
             h('path', {
               'fill-rule': 'evenodd',
               d:
-                'M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z',
+                'M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.608c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524-1.248-.684-2.472-1.02-3.612-1.152-.864-.096-1.692-.072-2.424.024l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012.564-.096 1.14-.264 1.74-.516.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z',
               'clip-rule': 'evenodd',
             }),
           ]),
