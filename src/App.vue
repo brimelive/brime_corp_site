@@ -274,16 +274,16 @@
                 <blockquote>
                   <div>
                     <p class="text-base text-gray-500">
-                      &ldquo;User Testimonial Goes Here.&rdquo;
+                      &ldquo;Brime's multi-streaming is so easy, even an engineer, like me, can do it.&rdquo;
                     </p>
                   </div>
                   <footer class="mt-3">
                     <div class="flex items-center space-x-3">
                       <div class="flex-shrink-0">
-                        <img class="h-6 w-6 rounded-full" src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="" />
+                        <img class="h-6 w-6 rounded-full" src="https://corp-staging.brime.tv/img/Sifu.jpg" alt="" />
                       </div>
                       <div class="text-base font-medium text-gray-700">
-                        Jane Doe, @JDoe
+                        @Sifu on Brime.tv
                       </div>
                     </div>
                   </footer>
@@ -615,7 +615,7 @@ const features = [
   },
   {
     name: 'Brime Labs',
-    description: 'Description',
+    description: 'A top secret division where we [REDACTED] and use our hyper-intelligent squirrels to [REDACTED]',
     icon: BeakerIcon,
   },
 ]
