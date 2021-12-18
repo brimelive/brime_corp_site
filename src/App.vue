@@ -604,8 +604,8 @@ const features = [
     icon: CurrencyDollarIcon,
   },
   {
-    name: 'Live Chat Replies',
-    description: 'Effortlessly reply to other chatters',
+    name: 'SRT Enabled',
+    description: 'SRT is a far more modern streaming protocol when compared to the 20 year old RTMP protocol.',
     icon: ReplyIcon,
   },
   {
